@@ -1,12 +1,12 @@
 # atlas-nextjs-app-quickstart
 
 A minimal Next.js (App Router) app pre-wired with [Atlas](https://atlasauth.net)
-auth, using `@atlasauth/nextjs` (edge middleware + server helpers) and
+auth, using `@atlasauth/nextjs` (proxy + server helpers) and
 `@atlasauth/react` (provider + components).
 
 ## What it shows
 
-- `middleware.ts` — Atlas edge middleware verifying the session JWT and
+- `proxy.ts` — Atlas proxy verifying the session JWT and
   protecting every route except `/` and `/sign-in` (`@atlasauth/nextjs`).
 - `app/providers.tsx` — the client-side `<AtlasProvider>` (from
   `@atlasauth/react`), mounted in `app/layout.tsx`.

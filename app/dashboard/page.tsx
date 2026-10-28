@@ -2,7 +2,7 @@ import { auth, currentUser } from '@atlasauth/nextjs/server';
 import { redirect } from 'next/navigation';
 
 /**
- * A protected server component. The middleware already gates this route, but we
+ * A protected server component. The proxy already gates this route, but we
  * defend in depth: `auth()` verifies the session from the ambient request, and a
  * signed-out visitor is sent to sign-in rather than rendering anything.
  */
